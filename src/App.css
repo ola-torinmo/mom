@@ -1,38 +1,119 @@
-.App {
+ 
+ 
+
+@font-face {
+  font-family: montserra;
+  src: url(./components/Images/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: playfair;
+  src: url(./components/Images/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+ .jumbo{
+  height: 100px;
+}
+.review{
+  margin-top: 25%;
+}
+.imgr{
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+  
+}
+.text-center{
+  height: 300px;
+  margin-top: 5%;
+  /* background-image: image(pic1C.jpg); */
+}
+.workus{
+ max-height: 50px;
+  margin-top: 5%;
+  text-align: center;
+  /* padding-top: 50%; */
+  /* text-justify: auto; */
+}
+.formik{
+  margin-top: 35%;
+  border-color: white;
+  color: white;
+  /* background-color: #86898a; */
+/* background-image: ; */
+}
+.text{
+   /* justify-self: center; */
+   margin-left: 40%;
+}
+.subform{
+  margin-left: 45%;
+}
+.but{
+  /* margin-top: 40%; */
+  
+}
+.foot{
+  height: 100px;
+}
+.socials{
+  padding-left: 5%;
+  /* padding-left: 20%; */
+  color: black;
+}
+.abt{
+  padding-left: 20%;
+}
+
+.tb{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.yellow{
+  color: gold;
+}
+/* #light {
+  background-color: white;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#dark {
+  background-color: black;
   color: white;
+} */
+/* .switch{
+  padding-left: 90%;
+  
+padding-top: -50%;
+  z-index: 10;
+} */
+/* #light .tog {
+  background-color: white;
+  color: black;
+}
+#dark .tog {
+  background-color: black;
+  color: white;
+} */
+.mel{
+  color: white;
+  z-index: auto;
+  margin-top: -20%;
+  text-align: left;
+  padding-left: 3%;
+
+}
+h1 ,h2 ,.nt{
+  /* background-color: black; */
+  font-family:  montserra;
+}
+p ,.tb{
+  font-family: playfair;
+}
+form{
+  color:grey;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 480px) {
+  .formik{
+    width: 100%;
+    
   }
 }
