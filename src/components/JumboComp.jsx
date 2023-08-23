@@ -15,7 +15,8 @@ return (
     <div className='jumbo rounded'>
    
     <Image src={pic5C} fluid 
-    className=' rounded'
+    className='image rounded '
+    // style={{ height: `150px` }}
     
     />
     <h1 className='mel' >Transforming Health and Home Services:<br/> Where Care Meets Innovation!</h1>

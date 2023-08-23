@@ -35,14 +35,16 @@
 }
 .formik{
   margin-top: 35%;
-  border-color: white;
-  color: white;
+  /* border-color: white; */
+  color: black;
+  /* background-color: azure; */
   /* background-color: #86898a; */
 /* background-image: ; */
 }
 .text{
    /* justify-self: center; */
    margin-left: 40%;
+   color: black;
 }
 .subform{
   margin-left: 45%;
@@ -69,6 +71,7 @@
 .yellow{
   color: gold;
 }
+
 /* #light {
   background-color: white;
   color: black;
@@ -110,10 +113,97 @@ p ,.tb{
 form{
   color:grey;
 }
+.workus{
+  
+  margin-bottom: 600px;
 
-@media screen and (min-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
   .formik{
-    width: 100%;
+    /* position: relative; */
     
   }
+  .text{
+    /* padding-right: 4rem; */
+    /* padding-left: -4rem; */
+    font-size: 15px;
+    /* margin-right: 70px; */
+    /* margin-right: 4rem; */
+    margin-left: 30%;
+    margin-right: 30%;
+
+  }
+  .subform{
+    font-size: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+
+  }
+  .footer2{
+    text-align: center;
+  }
+  .abt{
+    margin-left: -20%;
+    padding-bottom: 1rem;
+  }
+  .cardset{
+    height: 1100px;
+    /* position: absolute; */
+    /* background-image: url(./components/Images/pic3a.jpg);
+    background-repeat: no-repeat; */
+  }
+  #footer{
+    /* padding-top: 30rem; */
+  }
+  .image {
+    height: 172px;
+    
+  }
+  .mel{
+
+    text-align: left;
+    font-size: 18px;
+    /* padding-bottom:9rem; */
+  }
+  .review{
+    /* font-size: 10px; */
+      /* width: 100%; */
+      /* text-decoration: none; */
+      /* width: 500px; */
+      /* margin-left: 10px; */
+      padding-left: 1.5rem;
+      
+      
+    }
+
+.imgr{
+  padding-left: 20px;
+  
+}
+.imgrv{
+  margin-bottom: 50px;
+}
+.but{
+  /* color: pink; */
+  /* margin-bottom: 90%; */
+  margin-top: -15px;
+}
+.workus{
+  margin-bottom: 200px;
+}
+
+}
+
+@media  (min-width: 410px) and (max-width:415){
+  
+  .review{
+    /* font-size: 10px; */
+      /* width: 100%; */
+      /* text-decoration: none; */
+      /* width: 700px; */
+      /* margin-left: 10px; */
+      
+      
+    }
 }

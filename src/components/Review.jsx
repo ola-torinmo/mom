@@ -10,10 +10,17 @@ import '../App.css';
 
 function Review() {
   return (
+
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      className="bg-light position-relative"
+      style={{ minHeight: '240px' }}
+    >
    <Container className='review'>
-    <Row>
-    <Col md={4}>
-    <Toast className='pb-3'>
+    <Row className='mb-3'>
+    <Col  md={4}>
+    <Toast className='bg-secondary pb-3 '>
       <Toast.Header>
         <img  className="rounded me-2" alt="" />
         <strong className="me-auto">Ayobami</strong>
@@ -29,12 +36,13 @@ function Review() {
 
         <small>11 mins ago</small>
       </Toast.Header>
-      <Toast.Body  className='tb d-none d-sm-block'>"Momentum Services consistently delivers exceptional quality in their work. Their attention to detail and commitment to excellence is commendable."  
+        <Toast.Body  
+          className='tb d-none d-sm-block text-white'>"Momentum Services consistently delivers exceptional quality in their work. Their attention to detail and commitment to excellence is commendable."  
         </Toast.Body>
     </Toast>
     </Col>
     <Col md={4}>
-    <Toast className='pb-3'>
+    <Toast className='bg-secondary pb-3'>
       <Toast.Header>
         <img  className="rounded me-2" alt="" />
         <strong className="me-auto">Torinmo</strong>
@@ -47,13 +55,13 @@ function Review() {
         </div>
         <small>11 mins ago</small>
       </Toast.Header>
-      <Toast.Body className='tb d-none d-sm-block'>"The level of professionalism exhibited by Momentum Services is remarkable. From their communication to their work ethic, they truly set the bar high."
+      <Toast.Body className='tb d-none d-sm-block text-white'>"The level of professionalism exhibited by Momentum Services is remarkable. From their communication to their work ethic, they truly set the bar high."
        
       </Toast.Body>
     </Toast>
     </Col>
     <Col md={4}>
-    <Toast className='pb-3'>
+    <Toast className='bg-secondary pb-3'>
       <Toast.Header>
         <img  className="rounded me-2" alt="" />
         <strong className="me-auto">Olaoluwa</strong>
@@ -66,11 +74,73 @@ function Review() {
         </div>
         <small>11 mins ago</small>
       </Toast.Header>
-      <Toast.Body  className='tb d-none d-sm-block'>"Momentum Services has a reputation for their integrity and honesty. They operate with transparency and always prioritize the best interests of their clients."</Toast.Body>
+      <Toast.Body  className='tb d-none d-sm-block text-white'>"Momentum Services has a reputation for their integrity and honesty. They operate with transparency and always prioritize the best interests of their clients."</Toast.Body>
+    </Toast>
+    </Col>
+   </Row>
+
+   <Row className=''>
+    <Col md={4} sm={10}>
+    <Toast className='bg-secondary pb-3'>
+      <Toast.Header>
+        <img  className="rounded me-2" alt="" />
+        <strong className="me-auto">Ayobami</strong>
+        <div className=''>
+        <FontAwesomeIcon icon={ faStar} className='yellow' />
+        <FontAwesomeIcon icon={ faStar} className='yellow' />
+        <FontAwesomeIcon icon={ faStar} className='yellow' />
+        <FontAwesomeIcon icon={ faStar} className='yellow' />
+        <FontAwesomeIcon icon={ faStar} />
+        </div>
+        
+        
+
+        <small>11 mins ago</small>
+      </Toast.Header>
+        <Toast.Body  
+          className='tb d-none d-sm-block text-white'>"Momentum Services consistently delivers exceptional quality in their work. Their attention to detail and commitment to excellence is commendable."  
+        </Toast.Body>
+    </Toast>
+    </Col>
+    <Col md={4}>
+    <Toast className='bg-secondary pb-3 d-none d-sm-block'>
+      <Toast.Header>
+        <img  className="rounded me-2" alt="" />
+        <strong className="me-auto">Torinmo</strong>
+        <div className=''>
+        <FontAwesomeIcon icon={ faStar} className='yellow'/>
+        <FontAwesomeIcon icon={ faStar} className='yellow'/>
+        <FontAwesomeIcon icon={ faStar} className='yellow'/>
+        <FontAwesomeIcon icon={ faStar} className='yellow'/>
+        <FontAwesomeIcon icon={ faStar} />
+        </div>
+        <small>11 mins ago</small>
+      </Toast.Header>
+      <Toast.Body className='tb d-none d-sm-block text-white'>"The level of professionalism exhibited by Momentum Services is remarkable. From their communication to their work ethic, they truly set the bar high."
+       
+      </Toast.Body>
+    </Toast>
+    </Col>
+    <Col md={4}>
+    <Toast className='bg-secondary pb-3 d-none d-sm-block'>
+      <Toast.Header>
+        <img  className="rounded me-2" alt="" />
+        <strong className="me-auto">Olaoluwa</strong>
+        <div >
+        <FontAwesomeIcon icon={ faStar} className='yellow'/>
+        <FontAwesomeIcon icon={ faStar}className='yellow' />
+        <FontAwesomeIcon icon={ faStar} className='yellow'/>
+        <FontAwesomeIcon icon={ faStar} />
+        <FontAwesomeIcon icon={ faStar} />
+        </div>
+        <small>11 mins ago</small>
+      </Toast.Header>
+      <Toast.Body  className='tb d-none d-sm-block text-white'>"Momentum Services has a reputation for their integrity and honesty. They operate with transparency and always prioritize the best interests of their clients."</Toast.Body>
     </Toast>
     </Col>
    </Row>
    </Container>
+   </div>
   );
 }
 

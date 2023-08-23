@@ -8,6 +8,8 @@ import * as yup from 'yup';
 import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/Card';
 import pic3 from './Images/pic3.jpg'; // Tell webpack this JS file uses this image
+import pic3a from './Images/pic3a.jpg'; // Tell webpack this JS file uses this image
+import pic3b from './Images/pic3b.jpg'; // Tell webpack this JS file uses this image
 
 import '../App.css';
 
@@ -28,19 +30,20 @@ function ContactForm() {
 
 
 
-   <Container  className='formik rounded' >
-     <Card className="bg-dark text-white align-center " xs="auto">
-      <Card.Img src={pic3} alt="Card image" />
-      <Card.ImgOverlay>
-        <Card.Title className='text mt-5'><h2>Contact Form</h2></Card.Title>
+   <Container  className='formik rounded mb-5' >
+     <Card className="cardset bg-secondary " style={{ backgroundColor: '#f8f9fa' }}  >
+      {/* <Card.Img src={pic3b} alt="Card image" /> */}
+      {/* <Card.ImgOverlay> */}
+        <Card.Body >
+        <Card.Title className='text text-white mt-5 '><h2>CONTACT</h2></Card.Title>
         <Card.Text>
-        <Container className='mt-5'>
+        <Container  className='mt-5 pb-5'>
       <Formik
       validationSchema={schema}
       onSubmit={console.log}
       initialValues={{
-        firstName: 'Mark',
-        lastName: 'Otto',
+        firstName: '',
+        lastName: '',
         username: '',
         city: '',
         state: '',
@@ -50,11 +53,12 @@ function ContactForm() {
     >
       {({ handleSubmit, handleChange, values, touched, errors }) => (
         <Form noValidate onSubmit={handleSubmit}>
-          <Row className="mb-5 " xs="8">
-            <Form.Group as={Col} md="6" controlId="validationFormik01">
+          <Row className="mb-4 text-white" xs="8">
+            <Form.Group as={Col} md="12" controlId="validationFormik01">
               <Form.Label>First name</Form.Label>
               <Form.Control
                 type="text"
+                placeholder="First"
                 name="firstName"
                 value={values.firstName}
                 onChange={handleChange}
@@ -62,10 +66,14 @@ function ContactForm() {
               />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
-            <Form.Group as={Col} md="6" controlId="validationFormik02">
+           
+          </Row>
+          <Row className='mb-4 text-white'>
+          <Form.Group as={Col} md="12" controlId="validationFormik02">
               <Form.Label>Last name</Form.Label>
               <Form.Control
                 type="text"
+                placeholder="Last Name"
                 name="lastName"
                 value={values.lastName}
                 onChange={handleChange}
@@ -76,7 +84,7 @@ function ContactForm() {
             </Form.Group>
             
           </Row>
-          <Row className="mb-5">
+          <Row className="mb-4 text-white">
             <Form.Group as={Col} md="12" controlId="validationFormik03">
               <Form.Label>City</Form.Label>
               <Form.Control
@@ -95,7 +103,7 @@ function ContactForm() {
 
           </Row>
 
-          <Row className="mb-5">
+          <Row className="mb-4 text-white">
             <Form.Group as={Col} md="12" controlId="validationFormik03">
               <Form.Label>Adress</Form.Label>
               <Form.Control
@@ -113,9 +121,9 @@ function ContactForm() {
             </Form.Group>
 
           </Row>
-          <Row className="mb-5">
+          <Row className="mb-4 text-white">
             
-            <Form.Group as={Col} md="6" controlId="validationFormikUsername">
+            <Form.Group as={Col} md="12" controlId="validationFormikUsername">
               <Form.Label>Username</Form.Label>
               <InputGroup hasValidation>
                 <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
@@ -133,7 +141,10 @@ function ContactForm() {
                 </Form.Control.Feedback>
               </InputGroup>
             </Form.Group>
-            <Form.Group as={Col} md="3" controlId="validationFormik04">
+     
+          </Row>
+          <Row className='mb-4 text-white'>
+          <Form.Group as={Col} md="12" controlId="validationFormik04">
               <Form.Label>State</Form.Label>
               <Form.Control
                 type="text"
@@ -147,7 +158,10 @@ function ContactForm() {
                 {errors.state}
               </Form.Control.Feedback>
             </Form.Group>
-            <Form.Group as={Col} md="3" controlId="validationFormik05">
+            
+          </Row>
+          <Row className='mb-4 text-white'>
+          <Form.Group as={Col} md="12" controlId="validationFormik05">
               <Form.Label>Zip</Form.Label>
               <Form.Control
                 type="text"
@@ -163,7 +177,9 @@ function ContactForm() {
               </Form.Control.Feedback>
             </Form.Group>
           </Row>
-          <Form.Group className="mb-5">
+
+
+          <Form.Group className="mb-4 text-white">
             <Form.Check
               required
               name="terms"
@@ -175,15 +191,16 @@ function ContactForm() {
               id="validationFormik0"
             />
           </Form.Group>
-          <Button variant="outline-light" className='subform' type="submit">Submit form</Button>{' '}
+          <Button variant="outline-light" className='subform' type="submit">Submit</Button>{' '}
           {/* <Button  ></Button> */}
         </Form>
       )}
     </Formik>
     </Container>
         </Card.Text>
+        </Card.Body>
         {/* <Card.Text>Last updated 3 mins ago</Card.Text> */}
-      </Card.ImgOverlay>
+      {/* </Card.ImgOverlay> */}
     </Card>
    </Container>
 

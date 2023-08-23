@@ -38,10 +38,10 @@ const socials = [
 const Footer = () => {
   return (
     <footer className="bg-light text-dark mt-1 pt-5">
-      <Container>
+      <Container className='footer2'>
         <Row >
           <Col md={6} >
-            <h5 className='abt'>Socials</h5>
+            {/* <h5 className='abt'>Socials</h5> */}
            <div >
            {socials.map(({ icon, url }) => ( 
                <a 
