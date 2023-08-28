@@ -22,14 +22,14 @@ function NavbarComp() {
             <Nav.Link href="#features">Home</Nav.Link>
             <Nav.Link href="#pricing">About</Nav.Link>
             <NavDropdown title="Services" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">All Services</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                Live In Care
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Daily Services</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Specialist Services
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

@@ -8,6 +8,7 @@ import Services from './components/Services';
 import WorkUs from './components/WorkUs';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import { Route, Routes } from 'react-router-dom';
 // import {createContext,useState} from 'react';
 // import ReactSwitch from "react-switch";
 
@@ -37,16 +38,7 @@ function App() {
   return (
     
   //   <Router>
-  //   <Routes >
-      
-  //   <Route exact path="/" component={NavbarComp} />
-  //    <Route  path="/" component={Services} />
-  //    <Route  path="/" component={CarouselComp} />
-  //    <Route  path="/" component={ContactForm} />
-     
-     
-  
-  //  </Routes>
+ 
   //   </Router>
 //  <ThemeProvider style={{
 //   backgroundColor: theme === "light" ? "white" : "black",
@@ -56,13 +48,18 @@ function App() {
 
 
 // id={theme}
-<div >
+< >
 
 <NavbarComp/>  
 {/* <div className="switch">
         <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label>
         <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
 </div> */}
+   {/* <Routes >
+   <Route  path="/" element={} />
+    <Route  path="/" elementt={} />
+    <Route  path="/" elementt={} />
+  </Routes> */}
 
  
 <JumboComp/> 
@@ -71,7 +68,7 @@ function App() {
 <WorkUs/>
 <ContactForm/>
 <Footer/>
-</div>
+</>
 
 
 
