@@ -17,9 +17,9 @@ function About() {
     //     imageUrl: '',
     //     title: 'Transforming Health and Home Services:<br/> Where Care Meets Innovation!',
     //   };
-    const serviceData ={
+    // const serviceData ={
         
-    };
+    // };
     return(
         <div>
             <NavbarComp />
@@ -36,7 +36,7 @@ function About() {
             body2="We all work as a team to give our clients the finest service possible. Our team is like a family. The management team has been working together in the care industry for over 15 years, and it is because of this strong foundation and depth of knowledge that we are able to run our business so successfully and deliver an amazing and dependable service.
 
             Our staff as a whole has the same aim, and we put the needs of our customers and the provision of person-centered care at the top of our list. This enables you or a loved one to continue living at home in safety and independence while also experiencing fulfillment.
-            To ensure that we all adhere to the same idea and provide care that is unmatched, we have nurtured and created an excellent staff. As a County Carers client, you can be sure that each visit or placement will involve the same friendly faces at the same time. We firmly feel that what distinguishes us from the competition is the constancy of our care. 
+            To ensure that we all adhere to the same idea and provide care that is unmatched, we have nurtured and created an excellent staff. As a County Carers client, you can be sure that each visit or placement will involve the same friendly faces at the same time.
             "/>
             <ContactForm/>
             <Footer/>

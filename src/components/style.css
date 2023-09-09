@@ -2,9 +2,14 @@
     margin-top: 25%;
     text-align: center;
 }
-@media screen and (max-width: 480px){
- 
-    .jum{
-
-    }
+.contservice{
+    margin-top: 27%!important;
+}
+.banner{
+    text-align: center;
+}
+.imgt{
+    color: white;
+    z-index: auto;
+    margin-top: -10%;
 }

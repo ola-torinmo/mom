@@ -9,15 +9,15 @@ import '../App.css';
 function NavbarComp() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
+      <Container className="mt-2">
         <Navbar.Brand as={Link} to="/">Momentum</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto nt">
+          <Nav className="me-auto ">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             <NavDropdown title="Services" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/service">All Services</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Servicepg">All Services</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/live-in-care">Live In Care</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/daily-services">Daily Services</NavDropdown.Item>
               <NavDropdown.Divider />

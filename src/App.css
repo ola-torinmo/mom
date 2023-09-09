@@ -184,10 +184,11 @@ form{
 .workus{
   margin-bottom: 200px;
 }
+.toast{
+  margin-top: 1rem;
+  width: 100%;
 
 }
 
-@media  (min-width: 410px) and (max-width:415){
-  
-  
 }
+
