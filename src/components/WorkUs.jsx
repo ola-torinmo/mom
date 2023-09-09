@@ -1,7 +1,7 @@
 import React from "react"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import pic1Crv from './Images/pic1Crv.jpg'; // Tell webpack this JS file uses this image
+// import pic1Crv from './Images/pic1Crv.jpg'; // Tell webpack this JS file uses this image
 import pic1a from './Images/pic1a.jpg'; // Tell webpack this JS file uses this image
 // import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';

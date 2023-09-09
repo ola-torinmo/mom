@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
-import pic5C from './Images/pic5C.jpg'; // Tell webpack this JS file uses this image
+// import pic5C from './Images/pic5C.jpg'; // Tell webpack this JS file uses this image
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import '../App.css';

@@ -7,9 +7,9 @@ import * as formik from 'formik';
 import * as yup from 'yup';
 import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/Card';
-import pic3 from './Images/pic3.jpg'; // Tell webpack this JS file uses this image
-import pic3a from './Images/pic3a.jpg'; // Tell webpack this JS file uses this image
-import pic3b from './Images/pic3b.jpg'; // Tell webpack this JS file uses this image
+// import pic3 from './Images/pic3.jpg'; // Tell webpack this JS file uses this image
+// import pic3a from './Images/pic3a.jpg'; // Tell webpack this JS file uses this image
+// import pic3b from './Images/pic3b.jpg'; // Tell webpack this JS file uses this image
 
 import '../App.css';
 
